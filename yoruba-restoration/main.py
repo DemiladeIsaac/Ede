@@ -9,7 +9,7 @@ app = FastAPI(title="Ede Yoruba Text Service")
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
-        "http://localhost:5173",
+        "https://ede-zeta.vercel.app/",
     ],
     allow_credentials=True,
     allow_methods=["*"],
