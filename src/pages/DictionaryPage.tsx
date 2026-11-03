@@ -17,16 +17,16 @@ const DictionaryPage = ({ onBack }: DictionaryPageProps) => {
 
   const results = useMemo(() => searchDictionary(searchTerm), [searchTerm]);
 
-  const speakWord = (word: string) => {
-    if (!("speechSynthesis" in window)) return;
+  // const speakWord = (word: string) => {
+  //   if (!("speechSynthesis" in window)) return;
 
-    window.speechSynthesis.cancel();
+  //   window.speechSynthesis.cancel();
 
-    const utterance = new SpeechSynthesisUtterance(word);
-    utterance.lang = "yo-NG";
+  //   const utterance = new SpeechSynthesisUtterance(word);
+  //   utterance.lang = "yo-NG";
 
-    window.speechSynthesis.speak(utterance);
-  };
+  //   window.speechSynthesis.speak(utterance);
+  // };
 
   return (
     <section className="mx-auto w-full max-w-3xl px-4 py-8 sm:py-12">
